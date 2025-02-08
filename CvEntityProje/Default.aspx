@@ -34,8 +34,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="w3_agile_main_grids">
 			<div class="w3layouts_main_grid_left">	
 				<div class="w3_main_grid_left_grid">	
-					<h2>Delightful Profile</h2>
-					<p>Curabitur in turpis porta, tincidunt quam ac, consequat ante.</p>
+					<asp:Repeater ID="Repeater1" runat="server">
+						<ItemTemplate>
+								<h2><%#Eval("BILGILER") %><h2>
+										<P><%#Eval("EGITIM") %><p>
+						</ItemTemplate>
+					</asp:Repeater>
+				
+				<!-- <p>Curabitur in turpis porta, tincidunt quam ac, consequat ante.</p>-->
 					<div class="w3l_figure">
 						<img src="/web/images/1.png" alt=" " />
 					</div>
@@ -50,19 +56,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="w3ls_main_grid_right_grid">	
 					<div id="parentHorizontalTab">
 						<ul class="resp-tabs-list hor_1">
-							<li><i class="fa fa-user" aria-hidden="true"></i>About me</li>
-							<li><i class="fa fa-briefcase" aria-hidden="true"></i>my work</li>
-							<li><i class="fa fa-map-marker" aria-hidden="true"></i>Contact me</li>
+							<li><i class="fa fa-user" aria-hidden="true"></i>Hakkımda</li>
+							<li><i class="fa fa-briefcase" aria-hidden="true"></i>Çalışmalarım</li>
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i>İletişim</li>
+							<li><i class="fa fa-map-info" aria-hidden="true"></i>Yardım</li>  
 						</ul>
 						<div class="resp-tabs-container hor_1">
 							<div class="agileits_main_grid_right_grid">	
-								<p class="agileinfo_para">Aliquam sodales dolor ac lorem vulputate, eu maximus 
-									velit semper. Sed erat lacus, ultrices in iaculis ac, 
-									laoreet quis felis.Vivamus laoreet ultrices mi, quis euismod eros. 
-									Sed et sodales leo, a porta turpis. Curabitur porta massa in quam sagittis vehicula. 
-									<i>Sed vitae hendrerit ex. Aliquam in tortor venenatis, iaculis nunc eu, 
-									vestibulum purus. Duis sed efficitur ipsum. Curabitur in turpis porta, 
-									tincidunt quam ac, consequat ante.</i></p>
+								<p>DENEME</p>
 								<div class="wthree_tab_grid_sub">
 									<div class="wthree_tab_grid_sub_left">
 										<h5>321</h5>
